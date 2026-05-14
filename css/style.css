@@ -2,10 +2,47 @@ body {
 	visibility: hidden 
 }
 
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+	box-sizing: border-box;
+	width: auto;
+	max-width: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#content.container,
+footer.container {
+	width: calc(100% - 40px);
+}
+
+@media (max-width: 767px) {
+	.container,
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container,
+	#content.container,
+	footer.container {
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 .navmargin {
 	margin-top: 2em;
 }
 
 h2 {
     white-space: normal;
+}
+
+img {
+	-webkit-filter: none;
+	   -moz-filter: none;
+	    -ms-filter: none;
+	     -o-filter: none;
+	        filter: none;
 }
